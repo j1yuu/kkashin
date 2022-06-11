@@ -1,4 +1,4 @@
-import Profile from './aside/profile';
+import Profile from './aside/Profile';
 import Navbar from './aside/Navbar'
 
 export default function Aside() {
