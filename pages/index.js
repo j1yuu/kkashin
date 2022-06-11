@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Aside from '../components/Aside';
+import MainContent from '../components/MainContent'
 
 export default function Home() {
   return (
@@ -10,15 +11,13 @@ export default function Home() {
           name="description"
           content="Kkashin`s personal website"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
       </Head>
       <Aside />
+      <MainContent />
+
       <style jsx>{`
       .page {
         position: relative;
-        height: 200vh;
       }
     `}</style>
     </div>

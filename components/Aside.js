@@ -13,6 +13,7 @@ export default function Aside() {
             <style jsx>{`
                 .aside {
                     position: fixed;
+                    z-index: 10;
                     width: 25%;
                     height: 100vh;
                     padding-top: 3.5rem;

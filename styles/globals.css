@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/assets/Montserrat-Medium.ttf);
+  font-display: auto;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/assets/Montserrat-Bold.ttf);
+  font-display: auto;
+  font-weight: 700;
+}
+
 html,
 body {
   font-size: 0.694vw;
@@ -14,4 +28,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
 }
