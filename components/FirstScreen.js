@@ -36,7 +36,7 @@ export default function FirstScreen() {
 
                 .firstscreen__text {
                     position: absolute;
-                    top: 50rem;
+                    top: 35rem;
                     left: 15.6rem;
                 }
 
