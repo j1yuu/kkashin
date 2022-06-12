@@ -19,7 +19,7 @@ export default function Aside() {
                     padding-top: 3.5rem;
                     padding-bottom: 2.5rem;
                     background: rgba(245, 255, 253, 0.71);
-                    filter: drop-shadow(100px 0px 35px rgba(0, 0, 0, 0.25));
+                    filter: drop-shadow(1.4rem 0 2.5rem rgba(105, 161, 230, 0.4));
                 }
                 .aside__wrapper {
                     height: 100%;

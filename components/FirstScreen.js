@@ -21,6 +21,10 @@ export default function FirstScreen() {
                     Working with React / Bootstrap / SASS / JQuery</p>
             </div>
 
+            <div className='firstscreen__city'>
+                <span>Saint-Petersburg, Peterhof</span>
+            </div>
+
             <style jsx>{`
                 .firstscreen {
                     width: 100%;
@@ -52,6 +56,19 @@ export default function FirstScreen() {
                     font-weight: 500;
                     font-size: 2.4rem;
                     color: #FFFFFF;
+                }
+
+                .firstscreen__city {
+                    position: absolute;
+                    bottom: 4rem;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .firstscreen__city span {
+                    color: #FFFFFF;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
                 }
             `}</style>
         </div>

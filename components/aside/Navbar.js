@@ -6,17 +6,17 @@ export default function Navbar() {
             <Link href="#firstScreen">
                 <a className="navbar__link" >Home</a>
             </Link>
-            <Link href="#">
+            <Link href="#aboutMain">
                 <a className="navbar__link">About</a>
+            </Link>
+            <Link href="#">
+                <a className="navbar__link">Skills</a>
             </Link>
             <Link href="#">
                 <a className="navbar__link">Portfolio</a>
             </Link>
             <Link href="#">
-                <a className="navbar__link">Contatcs</a>
-            </Link>
-            <Link href="#">
-                <a className="navbar__link">Other Activities</a>
+                <a className="navbar__link">Contacts</a>
             </Link>
 
             <style jsx>{`
