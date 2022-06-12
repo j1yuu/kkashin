@@ -11,7 +11,7 @@ export default function AboutMain() {
                     <br />
                     Now, ending all preludes, I want to say a few words about my background: I`m currently a student of St.Petersburg State Institute of Technology on the faculty of biotechnology ending first course. I do sports (my favourites are volleyball and calisthenics) 1 to 4 times per week, just to feel that I keep my body at the right readiness level for hard days. <br />
                     My groupmates and friends note that my analyzing skills and learnability are on a high level. I like this point, but I don`t trust them much :) <br />
-                    Also I play on guitar (finished music school with the “red diploma”) and I`m a part of rock-group <a href="https://vk.com/13minutdovihoda" target="_blank" >“13 minutes to exit”</a>.
+                    Also I play on guitar (finished music school with the “red diploma”) and I`m a part of rock-group <a rel="noreferrer" href="https://vk.com/13minutdovihoda" target="_blank" >“13 minutes to exit”</a>.
                 </p>
                 <h3 className="main-subtitle">So basically I`m</h3>
                 <div className="about__cards">
