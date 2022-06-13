@@ -40,6 +40,16 @@ p, a, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
 .main-title {
   font-family: 'Montserrat';
   font-size: 3.2rem;
@@ -60,4 +70,41 @@ p, a, h1, h2, h3, h4, h5, h6 {
 .main-paragraph {
   font-size: 2rem;
   color: #464646;
+}
+
+.accordion-item {
+  border: none !important;
+  margin-bottom: 4.8rem;
+}
+
+.accordion-button::after {
+  background: none !important;
+  content: none !important;
+  /* border: none !important; */
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #F5FFFD !important;
+}
+
+@media (min-width: 48em) {
+  .accordion-item {
+    border-radius: 2rem 2rem 0 0 !important;
+  }
+  .accordion-header {
+    border-radius: 2rem 2rem 0 0 !important;
+    overflow: hidden;
+    box-shadow: .4rem .4rem 2.5rem rgba(0, 0, 0, 0.25);
+  }
+  .accordion-button {
+    padding: 2rem 2.1rem 2rem 3.7rem !important;
+  }
+  .accordion-body {
+    padding: 0 !important;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
+    box-shadow: .4rem .4rem 2.5rem rgba(0, 0, 0, 0.25);
+  }
 }

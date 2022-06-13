@@ -55,6 +55,8 @@ export default function AboutMain() {
                 }
                 .about__text a {
                     color: #69A1E6;
+                    text-decoration: none;
+                    font-size: inherit;
                 }
                 .about__cards {
                     padding-top: 4.6rem;

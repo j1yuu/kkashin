@@ -9,13 +9,13 @@ export default function Navbar() {
             <Link href="#aboutMain">
                 <a className="navbar__link">About</a>
             </Link>
-            <Link href="#">
+            <Link href="#skillsMain">
                 <a className="navbar__link">Skills</a>
             </Link>
-            <Link href="#">
+            <Link href="#portfolioMain">
                 <a className="navbar__link">Portfolio</a>
             </Link>
-            <Link href="#">
+            <Link href="#contactsMain">
                 <a className="navbar__link">Contacts</a>
             </Link>
 
@@ -27,6 +27,8 @@ export default function Navbar() {
                 }
 
                 .navbar__link {
+                    text-decoration: none;
+                    color: #000000;
                     font-size: 1.6rem;
                     font-weight: 500;
                     text-transform: uppercase;

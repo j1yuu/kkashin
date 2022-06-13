@@ -1,6 +1,9 @@
 import FirstScreen from "./FirstScreen";
 import AboutMain from "./AboutMain";
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
+import Contacts from "./Contacts";
+import Footer from "./Footer";
 
 export default function MainContent() {
     return (
@@ -9,6 +12,9 @@ export default function MainContent() {
             <FirstScreen />
             <AboutMain />
             <Skills />
+            <Portfolio />
+            <Contacts />
+            <Footer />
 
             <style jsx>{`
                 .maincontent {

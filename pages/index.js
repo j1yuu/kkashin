@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Aside from '../components/Aside';
 import MainContent from '../components/MainContent'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Home() {
   return (

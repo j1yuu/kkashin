@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <div className="skills">
+        <div className="skills" id="skillsMain">
             <div className="main-container skills__container">
                 <h2 className="main-subtitle skills__subtitle">Skills and professional education</h2>
                 <p className="main-paragraph skills__paragraph">
@@ -62,6 +62,7 @@ export default function Skills() {
                 }
                 .skills__paragraph a {
                     color: #69A1E6;
+                    text-decoration: none;
                 }
                 .skills__title {
                     padding-bottom: 10rem;
