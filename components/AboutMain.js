@@ -4,7 +4,7 @@ export default function AboutMain() {
         <div className="about" id="aboutMain">
             <div className="main-container about__container">
                 <h2 className="main-title about__title">About me</h2>
-                <p className="about__text">HI, I`m <b>Konstantin</b> and I`m glad that you`ve visited my page. <br />
+                <p className="main-paragraph about__text">HI, I`m <b>Konstantin</b> and I`m glad that you`ve visited my page. <br />
                     I`m <b>Junior Frontend-developer</b> and I made this website all by my own (except the design - I`ve looked for some references on the internet).<br />
                     I wrote it using Next.JS framework for React.JS in case that I need to show my English skills and coding skills somewhere.
                     <br />
@@ -17,25 +17,25 @@ export default function AboutMain() {
                 <div className="about__cards">
                     <div className="about-card">
                         <div className="about-card__img about-card__img-1">
-                            <img src="/images/JunWebDev.svg" />
+                            <img loading="lazy" src="/images/JunWebDev.svg" />
                         </div>
                         <p className="about-card__text">Junior WebDev</p>
                     </div>
                     <div className="about-card">
                         <div className="about-card__img about-card__img-2">
-                            <img src="/images/BioTech.svg" />
+                            <img loading="lazy" src="/images/BioTech.svg" />
                         </div>
                         <p className="about-card__text">BioTech student</p>
                     </div>
                     <div className="about-card">
                         <div className="about-card__img about-card__img-3">
-                            <img src="/images/Sports.svg" />
+                            <img loading="lazy" src="/images/Sports.svg" />
                         </div>
                         <p className="about-card__text">Sports enjoyer</p>
                     </div>
                     <div className="about-card">
                         <div className="about-card__img about-card__img-4">
-                            <img src="/images/Guitar.svg" />
+                            <img loading="lazy" src="/images/Guitar.svg" />
                         </div>
                         <p className="about-card__text">Guitarist</p>
                     </div>
@@ -51,7 +51,6 @@ export default function AboutMain() {
                     margin-bottom: 5.9rem;
                 }
                 .about__text {
-                    font-size: 2rem;
                     padding-bottom: 10rem;
                 }
                 .about__text a {

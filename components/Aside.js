@@ -31,6 +31,13 @@ export default function Aside() {
                 .aside__copyright {
                     font-size: 1.4rem;
                 }
+
+                @media (max-width: 48em) {
+                    .aside {
+                        width: 100%;
+                        z-index: -2;
+                    }
+                }
             `}</style>
         </aside>
     );
