@@ -2,7 +2,7 @@ export default function Contacts() {
     return (
         <div id="contactsMain" className="contacts">
             <div className="main-container contacts__container">
-                <h1 className="main-title contacts__title">Contacts</h1>
+                <h1 className="main-title contacts__title"><b>Contacts</b></h1>
                 <p className="contacts__paragraph">So, I guess that this is the end of my page. <br />
                     If you want to get in touch with me - I`m always online.</p>
                 <div className="contacts__contacts">
@@ -69,7 +69,32 @@ export default function Contacts() {
             .contacts__img img{
                 height: inherit;
                 width: inherit;
-            }        
+            }       
+            @media (max-width: 48em) {
+                .contacts__paragraph {
+                    font-size: 3rem;
+                }
+                .contacts__contacts {
+                    width: 100%;
+                    box-shadow: none;
+                    margin-bottom: 6rem;
+                }
+                .contacts__phone {
+                    font-size: 3.2rem;
+                    padding-bottom: 3rem;
+                }    
+                .contacts__social {
+                    margin-bottom: 3rem;
+                }
+                .contacts__social span {
+                    font-size: 3.2rem;
+                    margin-left: 4.4rem;
+                }
+                .contacts__img {
+                   height: 4.4rem;
+                   width: 4.4rem 
+                }  
+            } 
             `}</style>
         </div>
     )

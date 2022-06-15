@@ -58,6 +58,24 @@ export default function Profile() {
                 .profile__about span:first-child {
                     color: #69A1E6;
                 }
+
+                @media (max-width: 48em) {
+                    .profile__pic {
+                        width: 50vw;
+                        height: 50vw;
+                    }
+                    .profile__name {
+                        font-size: 4.6rem;
+                        margin-top: 6.7rem;
+                        margin-bottom: 5.4rem;
+                    }
+                    .profile__about {
+                        width: max-content;
+                    }
+                    .profile__about span {
+                        font-size: 2.6rem;
+                    }
+                }
             `}</style>
         </div>
     )

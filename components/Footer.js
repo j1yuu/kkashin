@@ -12,6 +12,12 @@ export default function Footer() {
                     font-size: 2.2rem;
                     font-weight: 500;
                 }
+                @media (max-width: 48em) {
+                    .footer {
+                        font-size: 3.2rem;
+                        padding: 3.4rem;
+                    }
+                }
             `}</style>
         </footer>
     )

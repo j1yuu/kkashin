@@ -80,7 +80,6 @@ button:focus {
 .accordion-button::after {
   background: none !important;
   content: none !important;
-  /* border: none !important; */
   box-shadow: none !important;
 }
 
@@ -88,7 +87,35 @@ button:focus {
   background-color: #F5FFFD !important;
 }
 
+.aside-toggle {
+  display: none;
+  z-index: 100;
+  width: 8.5rem;
+  height: 8.5rem;
+  position: fixed;
+  border-radius: 0 0 2rem 0;
+  padding: 1.25rem;
+  background-color: #F8FFFD;
+  box-shadow: .4rem .4rem 2.5rem rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.toggle-active {
+  box-shadow: none;
+}
+
+.toggle-image {
+  width: 6rem;
+  height: 6rem;
+  display: none;
+}
+
+.toggle-image-active {
+  display: block !important;
+}
+
 @media (min-width: 48em) {
+
   .accordion-item {
     border-radius: 2rem 2rem 0 0 !important;
   }
@@ -100,6 +127,60 @@ button:focus {
   .accordion-button {
     padding: 2rem 2.1rem 2rem 3.7rem !important;
   }
+  .accordion-body {
+    padding: 0 !important;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
+    box-shadow: .4rem .4rem 2.5rem rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media (max-width: 48em) {
+  html,
+  body {
+    font-size: 1.302vw;
+  }
+
+  .aside-toggle {
+    display: block;
+  }
+
+  .main-title,
+  .main-subtitle {
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 5.6rem;
+  }
+
+  .main-subtitle {
+    font-size: 4.8rem;
+  }
+
+  .main-container {
+    width: 67.8rem;
+  }
+
+  .main-paragraph {
+    font-size: 3rem;
+  }
+
+  .accordion-item {
+    border-radius: 2rem 2rem 0 0 !important;
+  }
+
+  .accordion-header{
+    border-radius: 2rem 2rem 0 0 !important;
+    overflow: hidden;
+    box-shadow: .4rem .4rem 2.5rem rgba(0, 0, 0, 0.25);
+  }
+
+  .accordion-button {
+    padding: 3rem 3.1rem 3rem 4.7rem !important;
+  }
+
   .accordion-body {
     padding: 0 !important;
     border-bottom-left-radius: 2rem;

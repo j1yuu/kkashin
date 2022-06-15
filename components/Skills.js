@@ -108,6 +108,29 @@ export default function Skills() {
                     font-size: 1.8rem;
                     font-weight: 500;
                 }
+
+                @media (max-width: 48em) {
+                    .skills__cards {
+                        width: 67.8rem;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .skills-card {
+                        width: 80%;
+                        height: max-content;
+                    }
+                    .skills-card__img {
+                        width: 16rem;
+                        height: 16rem;
+                    }
+                    .skills-card__description {
+                        font-size: 2.8rem;
+                    }
+                    .skills-card__right {
+                        width: 30rem;
+                        font-size: 2.6rem;
+                    }
+                }
             `}</style>
         </div>
     )

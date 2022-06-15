@@ -11,6 +11,7 @@ export default function FirstScreen() {
                     height={1084}
                     width={1080}
                     alt="Kkashin"
+                    className='firscreen-desc'
                 />
             </div>
 
@@ -30,6 +31,10 @@ export default function FirstScreen() {
                     width: 100%;
                     height: 108.6rem;
                     position: relative;
+                }
+
+                .firstscreen-desc {
+                    display: block;
                 }
 
                 .firstscreen__image {
@@ -69,6 +74,26 @@ export default function FirstScreen() {
                     color: #FFFFFF;
                     font-size: 1.8rem;
                     text-transform: uppercase;
+                }
+
+                @media (max-width: 48em) {
+                    .firstscreen {
+                        width: 100vw;
+                        height: 100.1vw;
+                    }
+                    .firstscreen__text {
+                        left: 12rem;
+                        top: 31rem;
+                    }
+                    .firstscreen__uppertext {
+                        font-size: 7rem;
+                    }
+                    .firstscreen__lowertext {
+                        font-size: 2.8rem;
+                    }
+                    .firstscreen__city span {
+                        font-size: 2.2rem;
+                    }
                 }
             `}</style>
         </div>

@@ -3,7 +3,7 @@ export default function AboutMain() {
     return (
         <div className="about" id="aboutMain">
             <div className="main-container about__container">
-                <h2 className="main-title about__title">About me</h2>
+                <h2 className="main-title about__title"><b>About me</b></h2>
                 <p className="main-paragraph about__text">HI, I`m <b>Konstantin</b> and I`m glad that you`ve visited my page. <br />
                     I`m <b>Junior Frontend-developer</b> and I made this website all by my own (except the design - I`ve looked for some references on the internet).<br />
                     I wrote it using Next.JS framework for React.JS in case that I need to show my English skills and coding skills somewhere.
@@ -99,7 +99,18 @@ export default function AboutMain() {
                 .about-card__text {
                     font-size: 1.8rem;
                     font-weight: 600;
-                }                
+                }        
+                
+                @media (max-width: 48em) {
+                    .about__cards {
+                        width: 54rem;
+                        flex-wrap: wrap;
+                        gap: 5.9rem;
+                    }
+                    .about-card {
+                        width: 23rem
+                    }
+                }
             `}</style>
         </div>
     );

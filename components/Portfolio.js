@@ -7,9 +7,9 @@ export default function Portfolio() {
     return (
         <div className="portfolio" id="portfolioMain">
             <div className="main-container portfolio__container">
-                <h1 className="main-title portfolio__title">Recent works</h1>
+                <h1 className="main-title portfolio__title"><b>Recent works</b></h1>
                 <div className="portfolio__tabs">
-                    <Accordion classname="portfolio-accordion" defaultActiveKey="0">
+                    <Accordion className="portfolio-accordion" defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>
                                 <div className="portfolio-accordion__upper">
@@ -124,6 +124,21 @@ export default function Portfolio() {
                 .portfolio-accordion__img img {
                     height: inherit;
                     width: inherit;
+                }
+
+                @media (max-width: 48em) {
+                    .portfolio__tabs {
+                        width: 67.8rem;
+                    }
+                    .portfolio-accordion__title {
+                        font-size: 2.8rem;
+                    }
+                    .portfolio-accordion__type {
+                        font-size: 2.6rem;
+                    }
+                    .portfolio-accordion__stack {
+                        display: none;
+                    }
                 }
             `}</style>
 

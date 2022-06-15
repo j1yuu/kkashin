@@ -1,22 +1,23 @@
 import Link from 'next/link'
+import asideToggle from './asideToggle'
 
 export default function Navbar() {
     return (
         <div className="navbar">
             <Link href="#firstScreen">
-                <a className="navbar__link" >Home</a>
+                <a className="navbar__link" onClick={asideToggle}>Home</a>
             </Link>
             <Link href="#aboutMain">
-                <a className="navbar__link">About</a>
+                <a className="navbar__link" onClick={asideToggle}>About</a>
             </Link>
             <Link href="#skillsMain">
-                <a className="navbar__link">Skills</a>
+                <a className="navbar__link" onClick={asideToggle}>Skills</a>
             </Link>
             <Link href="#portfolioMain">
-                <a className="navbar__link">Portfolio</a>
+                <a className="navbar__link" onClick={asideToggle}>Portfolio</a>
             </Link>
             <Link href="#contactsMain">
-                <a className="navbar__link">Contacts</a>
+                <a className="navbar__link" onClick={asideToggle}>Contacts</a>
             </Link>
 
             <style jsx>{`
@@ -44,6 +45,15 @@ export default function Navbar() {
                         color: #69A1E6;
                         text-shadow: 4px 4px 4px rgba(105, 161, 230, 0.25);
                         text-decoration: underline;
+                    }
+                }
+
+                @media (max-width: 48em) {
+                    .navbar__link {
+                        font-size: 3.2rem;
+                    }
+                    .navbar__link:not(:last-child) {
+                        margin-bottom: 2.4rem;
                     }
                 }
             `}</style>
